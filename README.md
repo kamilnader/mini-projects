@@ -7,3 +7,4 @@ This repository contains a collection of small projects that demonstrate various
 Below is a list of the current mini-projects available in this repository (more coming soon):
 
 1. **Simple Card**
+2. **Brutalist Fashion**
