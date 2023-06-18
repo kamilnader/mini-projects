@@ -8,3 +8,4 @@ Below is a list of the current mini-projects available in this repository (more 
 
 1. **Simple Card**
 2. **Brutalist Fashion**
+3. **Drum Module**
