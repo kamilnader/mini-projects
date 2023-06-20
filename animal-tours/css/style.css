@@ -1,0 +1,202 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.hero {
+    background: linear-gradient(119.54deg, #FFEBCD 8.57%, #FF8B72 91.34%);
+    margin: 0 auto;
+    padding: 6.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 5.8em;
+
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+h1 {
+    font-size: 3.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+.hero-text p {
+    font-size: 1.8rem;
+    font-weight: regular;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+ .gallery img {
+    max-width: 100%;
+    object-fit: cover;
+    border: 3px solid black;
+    box-shadow: .4em .4em 0em black;
+    border-radius: 1.6em;
+}
+
+.frog-image, .dog-image {
+    display: none;
+}
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5em;
+    justify-content: center;
+    align-items: center;
+    margin: 8.3em 0;
+    padding-left: 7.3em;
+    padding-right: 7.3em;
+
+    
+}
+
+.fast-pass, .safety-first, .location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+main img {
+    width: 4.7rem;
+}
+
+main h2 {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+main p {
+    font-size: 1.8rem;
+    font-weight: regular;
+    text-align: center;
+    max-width: 30.8rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    
+   
+  
+    h1 {
+        font-size: 5rem;
+        text-align: left;
+        font-weight: bold;
+    }
+    .hero-text p {
+        font-size: 2.4rem;
+        font-weight: regular;
+        text-align: left;
+        padding: 0;
+        max-width: 49.2rem;
+    }
+    .frog-image, .dog-image {
+        display: block;
+        
+    }
+
+    .horse-image {
+        align-self: flex-start;
+    }
+    .frog-image {
+        align-self: flex-end;
+        
+    }
+
+    .gallery {
+        display: flex;
+        gap: 3.4em;
+        margin-bottom: -8rem;
+    }
+    .gallery img {
+        max-width: 19.5em;
+    }
+    .gallery-one {
+        display: flex;
+        gap: 3.4em;
+        height: 20em;
+        
+    }
+
+    main {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .fast-pass {
+        flex: 2;
+        flex-basis: 100%;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .safety-first, .location {
+        flex: 1;
+        justify-content: unset;
+        align-items: unset;
+    
+    }
+    
+    main p {
+        text-align: unset;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .gallery-one {
+        flex-direction: column;
+    }
+
+    .gallery-two {
+        height: 2em;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    main {
+        flex-wrap: nowrap;
+        max-width: 1200px;
+        margin: 13em auto;
+        
+    }
+
+    .fast-pass {
+        flex: 1;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+    .safety-first, .location {
+        flex: 1;
+        justify-content: unset;
+        align-items: unset;
+    
+    }
+
+
+}

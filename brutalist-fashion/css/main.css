@@ -114,9 +114,11 @@ svg {
         grid-template-columns: repeat(2, 1fr) 2fr;
         grid-template-rows: auto 1fr 100px;
     }
+
     a {
         text-decoration: none;
     }
+
     svg {
         display: block;
     }
@@ -130,5 +132,5 @@ svg {
     top: -220px;
     left: -380px;
 
-}
+    }
 }
