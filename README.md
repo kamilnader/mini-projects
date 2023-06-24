@@ -11,3 +11,4 @@ Below is a list of the current mini-projects available in this repository (more 
 3. **Drum Module**
 4. **Animal Tours**
 5. **Calendar Card**
+6. **Car Gallery**
