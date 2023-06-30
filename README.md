@@ -14,3 +14,4 @@ Below is a list of the current mini-projects available in this repository (more 
 6. **Car Gallery**
 7. **Fitness Blip**
 8. **Gamer Stats**
+8. **News Article**
