@@ -1,0 +1,173 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f0c5ad;
+  height: 100vh;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+header {
+  padding: 0 4em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5em;
+  margin-bottom: 2em;
+  gap: 2.5em;
+}
+
+section {
+  padding: 0 4em;
+  display: grid;
+  grid-template-rows: auto auto 133px 150px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "h1 h1"
+    "left right"
+    "green1 green1"
+    "lower lower";
+
+  margin: 0 auto;
+  gap: 0.2em;
+}
+
+h1 {
+  grid-area: h1;
+  justify-self: center;
+  align-self: center;
+  font-size: 8.3rem;
+}
+
+.left {
+  grid-area: left;
+  margin-bottom: 3.5rem;
+  padding-right: 3em;
+  font-size: 1.2rem;
+}
+.right {
+  grid-area: right;
+  margin-bottom: 3.5rem;
+  padding-left: 3em;
+  font-size: 1.2rem;
+}
+
+.green1 {
+  grid-area: green1;
+}
+
+.lower {
+  grid-area: lower;
+  display: grid;
+  grid-template-columns: 1fr 51.7%;
+  grid-template-rows: 150px;
+  gap: 0.2em;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.box p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 1100px) {
+  header {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5em auto;
+    gap: 2.5em;
+  }
+
+  section {
+    display: grid;
+    padding: unset;
+    max-width: 900px;
+    grid-template-rows: auto 133px 200px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      ". h1 h1"
+      ". left right"
+      "green1 lower";
+
+    margin: 0 auto;
+    gap: 0.2em;
+  }
+
+  h1 {
+    grid-area: h1;
+    justify-self: center;
+    font-size: 8.3rem;
+    grid-column: 2/4;
+  }
+
+  .left {
+    grid-area: left;
+    grid-column: 2/3;
+    margin-bottom: 3.5rem;
+    padding-right: 3em;
+    font-size: 1.2rem;
+  }
+  .right {
+    grid-area: right;
+    grid-column: 3/4;
+    margin-bottom: 3.5rem;
+    padding-left: 3em;
+    font-size: 1.2rem;
+  }
+
+  .green1 {
+    grid-area: green1;
+    grid-column: 1;
+    grid-row: 1/4;
+  }
+
+  .lower {
+    grid-area: lower;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+    gap: 0.2em;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+
+  .box h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .box p {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+}

@@ -16,3 +16,4 @@ Below is a list of the current mini-projects available in this repository (more 
 8. **Gamer Stats**
 9. **News Article**
 10. **Web Stats**
+11. **Sea Scape**
