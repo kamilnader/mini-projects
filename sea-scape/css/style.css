@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 html {
   font-size: 62.5%;
 }
@@ -9,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f0c5ad;
   height: 100vh;
 }
@@ -167,7 +169,7 @@ h1 {
   }
 
   .box p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 400;
   }
 }
