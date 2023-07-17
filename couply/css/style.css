@@ -1,0 +1,675 @@
+:root {
+  --background-color: #e8f5e2;
+  --light-green: #c6dbbd;
+  --dark-green: #9bc588;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--background-color);
+}
+
+/* Header */
+
+header {
+  padding: 1.7em;
+  border-bottom: 1px solid black;
+
+  & .wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    & nav {
+      position: fixed;
+      right: -100%;
+      top: 0;
+      width: 33%;
+      background-color: white;
+      height: 100vh;
+      padding: 4.6em;
+      transition: right 0.5s ease-in-out;
+
+      & ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 0;
+        padding: 0;
+        gap: 4.3em;
+
+        & a {
+          font-size: 1.8rem;
+          color: black;
+          text-decoration: none;
+
+          &:hover {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.close-btn {
+  cursor: pointer;
+  display: block;
+  width: 3rem;
+  margin-left: auto;
+  margin-bottom: 6.6rem;
+}
+
+.open {
+  right: 0% !important;
+}
+
+.hide-mobile {
+  display: none;
+}
+
+/* Hero Section */
+
+.left-col {
+  text-align: center;
+  padding: 7em;
+  border-bottom: 1px solid black;
+  background-color: var(--background-color);
+
+  & h1 {
+    font-size: 3.2rem;
+    line-height: 125%;
+    font-weight: 700;
+    margin-bottom: 1.4em;
+  }
+
+  & .customers > .multiple-testimonials > p {
+    font-size: 1.6rem;
+    margin-bottom: 1em;
+  }
+
+  & .customers > .multiple-testimonials > img {
+    width: 200px;
+  }
+}
+
+.right-col {
+  padding: 5em 2rem;
+  background-color: var(--background-color);
+
+  & ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 3em;
+    margin-bottom: 5em;
+  }
+
+  & li {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+
+    & p {
+      font-size: 2rem;
+      font-weight: 400;
+
+      & span {
+        color: var(--dark-green);
+        font-weight: 700;
+      }
+    }
+  }
+
+  & a {
+    display: flex;
+    color: black;
+    gap: 1.5em;
+    background-color: var(--dark-green);
+    padding: 1.5em 8em;
+    text-decoration: none;
+    border-radius: 0.4em;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0px #000000;
+    justify-content: center;
+
+    & p {
+      font-size: 2.2rem;
+      font-weight: bold;
+    }
+  }
+}
+
+/* Companies Section */
+
+.companies {
+  background-color: black;
+
+  & .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 4.5em;
+    padding: 5.5em;
+    place-items: center;
+    height: 320px;
+
+    & img:nth-of-type(3) {
+      width: 120px;
+    }
+
+    & img:nth-of-type(4) {
+      width: 120px;
+    }
+  }
+}
+
+/* Main section */
+main {
+  border-bottom: 2px solid black;
+  & .wrapper {
+    background-color: white;
+    padding: 2em;
+
+    & .products {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1.8em;
+      margin-top: -100px;
+
+      & .pink-sneakers {
+        background: url(../assets/pink-sneakers.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid black;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 0.4em;
+      }
+
+      & .arrows {
+        background: url(../assets/arrows.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid black;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 0.4em;
+      }
+
+      & .headphones {
+        background: url(../assets/headphones.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid black;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 0.4em;
+      }
+
+      & p:nth-of-type(1) {
+        background: white;
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding: 2rem;
+        grid-column: 1/5;
+      }
+
+      & p:nth-of-type(2) {
+        background: black;
+        color: white;
+        font-size: 2.2rem;
+        font-weight: bold;
+        padding: 2rem;
+        grid-column: 4;
+        grid-row: 4;
+      }
+    }
+  }
+}
+
+.main-offers {
+  background-color: white;
+  padding-top: 7em;
+  padding-bottom: 7em;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  & p {
+    font-size: 2.6rem;
+    text-decoration: underline;
+  }
+}
+
+/* footer */
+footer .wrapper {
+  display: grid;
+  padding: 3.5em;
+  gap: 2em;
+  background-color: var(--background-color);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "logo socials"
+    "nav nav"
+    "copy copy";
+
+  & .logo {
+    grid-area: logo;
+  }
+
+  & .socials {
+    grid-area: socials;
+    font-size: 1.4rem;
+    justify-self: end;
+
+    & .social-icons {
+      display: flex;
+      gap: 2em;
+      margin-bottom: 1em;
+    }
+  }
+
+  & .navigation {
+    grid-area: nav;
+    justify-self: center;
+    margin-top: 5em;
+  }
+
+  & nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2.5em;
+
+    & li a {
+      text-decoration: none;
+      font-size: 1.8rem;
+      color: black;
+    }
+  }
+
+  & .copyright {
+    grid-area: copy;
+    font-size: 1.4rem;
+    justify-self: center;
+  }
+}
+
+/* Tablet CSS */
+@media only screen and (min-width: 850px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .hide-mobile {
+    display: inherit;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+
+  header .wrapper {
+    align-items: center;
+    padding-top: 2.9em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2.9em;
+
+    & nav {
+      position: unset;
+      height: auto;
+      background: none;
+      padding: 0;
+      width: auto;
+
+      & ul {
+        flex-direction: row;
+      }
+    }
+
+    .header-cta {
+      background-color: var(--light-green);
+      display: flex;
+      flex-direction: row;
+      color: black;
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: bold;
+      gap: 0.5em;
+      padding: 0.4rem 1.2rem;
+      border: 1px solid;
+      border-radius: 0.4rem;
+    }
+  }
+
+  /* Section hero*/
+
+  .left-col {
+    text-align: left;
+
+    & h1 {
+      position: relative;
+      display: inline;
+      font-size: 4.5rem;
+
+      &:before {
+        position: absolute;
+        content: "";
+        background: url(/assets/h1-decoration.svg) no-repeat;
+        top: -20px;
+        right: -530px;
+        width: 150px;
+        height: 150px;
+        z-index: 2;
+      }
+    }
+
+    & .customers {
+      display: flex;
+      gap: 5em;
+      align-items: center;
+
+      & .testimonial-box {
+        display: flex;
+        background-color: white;
+        padding: 1.5em;
+        padding-right: 4em;
+        border-radius: 4.4em;
+        gap: 1.8em;
+        align-items: center;
+
+        & img {
+          width: 60px;
+          object-fit: cover;
+          height: 60px;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+
+        & .testimonial {
+          display: flex;
+          flex-direction: column;
+          font-size: 1.6rem;
+          text-align: left;
+
+          & span {
+            color: #779469;
+            font-weight: bold;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  .right-col {
+    & ul {
+      flex-direction: row;
+
+      & li {
+        flex-direction: column;
+      }
+    }
+
+    & a {
+      display: inline-flex;
+      padding: 1.5em 5em;
+    }
+  }
+
+  /* Companies Section */
+
+  .companies .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    height: 250px;
+
+    & .view-all {
+      display: none;
+    }
+  }
+
+  /* Main Section */
+  main {
+    background-color: white;
+
+    & .wrapper .products {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin-top: -100px;
+
+      & .flower-shoes {
+        background: url(../assets/flower-shoes.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid black;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 0.4em;
+      }
+
+      & .cool-shades {
+        background: url(../assets/cool-shades.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid black;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 0.4em;
+      }
+      & .drinks {
+        background: url(../assets/drinks.jpg) no-repeat center center;
+        background-size: cover;
+        height: 250px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        border: 2px solid black;
+        box-shadow: 4px 4px 0px #000000;
+        border-radius: 0.4em;
+      }
+    }
+  }
+
+  .main-offers {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding-left: 2em;
+    & p {
+      font-size: 2.6rem;
+      text-decoration: underline;
+    }
+  }
+
+  /* Footer */
+  footer .wrapper {
+    padding: 2em;
+    margin-bottom: 3em;
+    gap: 2em;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "logo nav"
+      "socials copy";
+
+    & .socials {
+      justify-self: start;
+    }
+
+    & .navigation {
+      justify-self: end;
+      margin-top: 0em;
+    }
+
+    & .copyright {
+      justify-self: end;
+      align-self: center;
+    }
+  }
+}
+
+/* Desktop CSS */
+@media only screen and (min-width: 1150px) {
+  header {
+    padding-left: 0;
+    padding-right: 0;
+
+    & .wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .hero {
+    display: flex;
+    align-items: center;
+
+    & .left-col {
+      border-bottom: none;
+      display: flex;
+      flex-direction: column;
+      border-right: 1px solid black;
+      padding-left: 0;
+      padding-right: 6.8em;
+      gap: 2em;
+      flex-basis: 55%;
+
+      & h1:before {
+        position: absolute;
+        content: "";
+        background: url(/assets/h1-decoration.svg) no-repeat;
+        top: -20px;
+        right: -80px;
+        width: 150px;
+        height: 150px;
+        z-index: 2;
+      }
+
+      & .customers {
+        gap: 4em;
+
+        & .multiple-testimonials p {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    & .right-col {
+      padding-left: 6em;
+      & ul {
+        flex-direction: column;
+
+        & li {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+
+  /* Companies Section */
+
+  .companies .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    height: 250px;
+    padding-left: 0;
+    padding-right: 0;
+
+    & img {
+      justify-self: start;
+    }
+
+    & .view-all {
+      display: inherit;
+      color: white;
+      display: flex;
+      gap: 1em;
+      font-size: 2rem;
+    }
+  }
+
+  main {
+    background-color: white;
+
+    & .wrapper {
+      padding-left: 0;
+      padding-right: 0;
+      & .products {
+        grid-template-columns: 366px repeat(2, 1fr) 300px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+          "shoes shoes arrow head"
+          "shoes1 shades shades drink";
+
+        & .pink-sneakers {
+          grid-area: shoes;
+          grid-template-areas:
+            ". . . ."
+            ". . . ."
+            ". . . ."
+            "d d d p";
+
+          & .description {
+            grid-area: d;
+          }
+          & .price {
+            grid-area: p;
+          }
+        }
+        & .arrows {
+          grid-area: arrow;
+        }
+        & .headphones {
+          grid-area: head;
+        }
+        & .flower-shoes {
+          grid-area: shoes1;
+        }
+        & .cool-shades {
+          grid-area: shades;
+          grid-template-areas:
+            ". . . ."
+            ". . . ."
+            ". . . ."
+            "d d d p";
+
+          & .description {
+            grid-area: d;
+          }
+          & .price {
+            grid-area: p;
+          }
+        }
+        & .drinks {
+          grid-area: drink;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couply</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../../js/myScript.js" async></script>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <img src="../assets/logo.svg" alt="Couply Logo" />
+        <nav>
+          <img
+            src="../assets/close.svg"
+            class="close-btn hide-tablet"
+            alt="Close Menu"
+          />
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="menu hide-tablet">
+          <img src="../assets/menu.svg" alt="menu button" />
+        </a>
+        <a href="#" class="header-cta hide-mobile">
+          <p>Start saving</p>
+          <img src="../assets/Arrow.svg" alt="icon for button - arrow down" />
+        </a>
+      </div>
+    </header>
+
+    <section class="hero wrapper">
+      <div class="left-col">
+        <h1>Shopping with coupons, applied automatically!</h1>
+        <div class="customers">
+          <div class="multiple-testimonials">
+            <p>Used by over 500,000 peeps</p>
+            <img
+              src="../assets/customers.png"
+              alt="multiple customers images"
+            />
+          </div>
+          <div class="testimonial-box hide-mobile">
+            <img src="../assets/janey.jpg" alt="Janey Doe user" />
+            <div class="testimonial">
+              <p>Holy sh*t, I saved $500!</p>
+              <p><span>-Janey Doe</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right-col">
+        <ul>
+          <li>
+            <img src="../assets/1icon.svg" alt="number 1 icon" />
+            <p>Download the Extension for Chrome or Firefox.</p>
+          </li>
+          <li>
+            <img src="../assets/2icon.svg" alt="number 2 icon" />
+            <p>Visit your favorite online retailers.</p>
+          </li>
+          <li>
+            <img src="../assets/3icon.svg" alt="number 3 icon" />
+            <p><span>Save!</span> Apply coupons from the toolbar.</p>
+          </li>
+        </ul>
+        <a href="#">
+          <p>Install Extension</p>
+          <img src="../assets/Arrow.svg" alt="Arrow down for button" />
+        </a>
+      </div>
+    </section>
+
+    <section class="companies">
+      <div class="wrapper">
+        <img src="../assets/Amazon.svg" alt="amazon logo" />
+        <img src="../assets/Best Buy.svg" alt="amazon logo" />
+        <img src="../assets/Shopify.svg" alt="amazon logo" />
+        <img src="../assets/Walmart.svg" alt="amazon logo" />
+        <div class="view-all hide-mobile">
+          <img src="../assets/eye-icon.svg" alt="eye icon" />
+          <p>View all brands</p>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <div class="wrapper">
+        <div class="products">
+          <div class="pink-sneakers">
+            <p class="description">Women’s Nike Shoes</p>
+            <p class="price">$69</p>
+          </div>
+
+          <div class="arrows">
+            <p class="description">Quiky Arrows</p>
+            <p class="price">$14</p>
+          </div>
+
+          <div class="headphones">
+            <p class="description">SkullCrusher Headphones</p>
+            <p class="price">$99</p>
+          </div>
+
+          <div class="flower-shoes hide-mobile">
+            <p class="description">Flower Women Shoes</p>
+            <p class="price">$99</p>
+          </div>
+
+          <div class="cool-shades hide-mobile">
+            <p class="description">Cool Shades</p>
+            <p class="price">$10</p>
+          </div>
+
+          <div class="drinks hide-mobile">
+            <p class="description">Smoothies</p>
+            <p class="price">$99</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-offers">
+        <img src="../assets/black-eye-icon.svg" alt="eye icon" />
+        <p>View all offers</p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrapper">
+        <img src="../assets/logo.svg" class="logo" alt="logo" />
+
+        <nav class="navigation">
+          <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="socials">
+          <div class="social-icons">
+            <img src="../assets/twitter.svg" alt="twitter image" />
+            <img src="../assets/Facebook.svg" alt="facebook image" />
+            <img src="../assets/Spotify.svg" alt="spotify image" />
+          </div>
+          <p>contact@couply.com</p>
+        </div>
+
+        <p class="copyright">Copyright 2022-2023 @ Couply LLC</p>
+      </div>
+    </footer>
+    <script>
+      document.querySelector(".menu").addEventListener("click", () => {
+        document.querySelector("nav").classList.toggle("open");
+      });
+      document.querySelector(".close-btn").addEventListener("click", () => {
+        document.querySelector("nav").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
