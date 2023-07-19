@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="../../js/myScript.js" async></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Avatar Designer</h1>
+      <p>Upload your image or try one of the provided options:</p>
+      <div class="image-area">
+        <img src="src/ella1.jpg" class="avatar" alt="Ella Image" />
+      </div>
+      <div class="buttons">
+        <button class="btn" data-image="src/ella1.jpg">Image 1</button>
+        <button class="btn" data-image="src/ella2.jpg">Image 2</button>
+        <button class="btn" data-image="src/ella3.jpg">Image 3</button>
+      </div>
+      <div class="options">
+        <input type="file" id="file-upload" accept="image/png, image/jpeg" />
+        <label for="border-radius">Adjust border radius:</label>
+        <input
+          type="range"
+          id="border-radius"
+          step="1"
+          min="0"
+          max="100"
+          value="0"
+        />
+
+        <label for="border-width">Adjust border width:</label>
+        <input
+          type="range"
+          id="border-width"
+          step="1"
+          min="0"
+          max="10"
+          value="0"
+        />
+
+        <label for="color-option">Choose border color:</label>
+        <input type="color" id="color-option" />
+        <label for="image-size">Change Image Size:</label>
+        <input type="range" id="image-size" step="1" min="100" max="300" />
+      </div>
+      <button class="btn-reset">Reset Styles</button>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

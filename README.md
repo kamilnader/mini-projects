@@ -18,3 +18,4 @@ Below is a list of the current mini-projects available in this repository (more 
 10. **Web Stats**
 11. **Sea Scape**
 12. **Couply**
+12. **Avatar Designer**
