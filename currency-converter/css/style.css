@@ -1,0 +1,166 @@
+:root {
+  --primary-color: #355fe5;
+}
+
+html {
+  font-size: 62.5%;
+}
+p,
+a {
+  font-size: 1.8rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 2.6em;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 2.2em;
+}
+
+header ul li a {
+  color: black;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+/* Hero Section */
+
+section.hero {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+
+  & span {
+    color: var(--primary-color);
+  }
+}
+
+p.subhead {
+  font-size: 2rem;
+}
+
+/* Features Section */
+h3 {
+  font-size: 2.5rem;
+}
+
+.target-buttons,
+.base-buttons {
+  display: flex;
+  overflow-x: scroll;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  gap: 2em;
+}
+
+.button {
+  all: unset;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+  padding: 2em 3em;
+  border-radius: 1rem;
+  white-space: nowrap;
+  font-size: 1.8rem;
+}
+
+.features button.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.track-link {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 2.5em;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+
+/* footer */
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+
+  & a {
+    align-self: center;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  & .cta-links {
+    display: flex;
+    margin-top: 2em;
+    gap: 3em;
+    align-self: center;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .target-buttons,
+  .base-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    gap: 2em;
+    overflow-x: hidden;
+  }
+
+  .button {
+    all: unset;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+    padding: 2em 2em;
+    border-radius: 1rem;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    min-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 1000px;
+    margin: 2em auto;
+  }
+}
