@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/results.css">
+    <title>Results Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper navbar">
+        <a href="/" class="logo">Currencypro</a>
+
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Converter</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="features">
+      <div class="wrapper">
+        <h1>Currencypro Converter</h1>
+        <p class="subhead">Check live foreign currency exchange rates</p>
+        <div class="exchange-section">
+          <label id="amount-label" for="amount-field">Enter Amount:</label>
+          <input type="number" id="amount-field" value="1" />
+          <p class="amount-number"></p>
+          <div class="icons">
+            <button class="base-button"></button>
+            <a href="#" class="revert-link">
+              <button class="revert-currency"><img src="assets/arrow-left-right-line.svg" alt="icon"></button>
+            </a>
+            <button class="target-button"></button>
+          </div>
+          <p class="amount-base"></p>
+          <p class="result-target"></p>
+      </div>
+    </section>
+    <footer>
+      <div class="wrapper">
+        <div class="footer-copyright">
+          <a href="#">2023. All Rights Reserved</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+
+          <div class="cta-links">
+            <a href="#"
+              ><img src="assets/instagram-icon.svg" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="assets/facebook-icon.svg" alt="facebook"
+            /></a>
+            <a href="#"
+              ><img src="assets/linkedin-icon.svg" alt="linkedin"
+            /></a>
+            <a href="#"><img src="assets/twitter-icon.svg" alt="twitter" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="js/results.js"></script>
+    <script src="../js/myScript.js"></script>
+  </body>
+</html>

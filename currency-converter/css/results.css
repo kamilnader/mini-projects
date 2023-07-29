@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #355fe5;
+}
+
+html {
+  font-size: 62.5%;
+}
+p,
+a {
+  font-size: 1.8rem;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin: 2.6em;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a.logo {
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+
+header ul {
+  display: flex;
+  gap: 2.2em;
+}
+
+header ul li a {
+  color: black;
+}
+
+a.active {
+  font-weight: bold;
+}
+
+/* footer */
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+
+  & a {
+    align-self: center;
+    color: black;
+    font-size: 1.4rem;
+  }
+
+  & .cta-links {
+    display: flex;
+    margin-top: 2em;
+    gap: 3em;
+    align-self: center;
+  }
+}
+
+/* Featurs */
+
+h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.subhead {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#amount-label {
+  font-size: 1.6rem;
+  display: block;
+}
+
+.exchange-section {
+  text-align: center;
+}
+
+#amount-field {
+  all: unset;
+  color: var(--primary-color);
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+button {
+  all: unset;
+  background-color: white;
+  border-radius: 2.5em;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+  padding: 0.5rem 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.revert-currency img {
+  width: 20px;
+}
+
+.amount-base {
+  font-size: 2rem;
+  margin-top: 30px;
+}
+.result-target {
+  margin-top: -10px;
+  font-size: 3rem;
+  font-weight: bold;
+}
