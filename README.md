@@ -20,3 +20,5 @@ Below is a list of the current mini-projects available in this repository (more 
 12. **Couply**
 13. **Avatar Designer**
 14. **Recall**
+15. **Currency Converter**
+16. **Designalytics**
