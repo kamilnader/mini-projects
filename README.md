@@ -22,3 +22,4 @@ Below is a list of the current mini-projects available in this repository (more 
 14. **Recall**
 15. **Currency Converter**
 16. **Designalytics**
+17. **Drum Kit**
