@@ -23,4 +23,5 @@ Below is a list of the current mini-projects available in this repository (more 
 15. **Currency Converter**
 16. **Designalytics**
 17. **Drum Kit**
-18. **SocialEditor**
+18. **Social Editor**
+19. **Better Photos**
